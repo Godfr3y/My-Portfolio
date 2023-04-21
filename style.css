@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-image: url(images/background-for-body.png);
+    background-image: url(images/header_background.png);
     color: #fff;
 }
 
@@ -81,11 +81,6 @@ nav ul li a:hover::after{
 }
 
 /*--------about---------*/
-
-#about{
-    padding: 80px 0;
-    color: white;
-}
 
 .row{
     display: flex;
@@ -164,56 +159,11 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* ------------------services------------------- */
+/*--------interest--------- */
 
-#services{
-    padding: 30px 0;   
-}
-
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
-}
-
-/*--------portfolio--------- */
-
-#portfolio{
+#interest{
     padding: 15px 0;
+    text-align: center;
 }
 
 .work-list{
@@ -225,16 +175,15 @@ nav ul li a:hover::after{
 
 .work{
     border-radius: 10px; 
-    position: relative
+    position: relative;
     overflow: hidden;
 }
 
 .work img{
-    width: 100%;
+    width: 100%;    
     border-radius: 10px;
     display: block;           
     transition: transform 0.5s;
-    position: relative;
 }
 
 .layer{
@@ -242,7 +191,7 @@ nav ul li a:hover::after{
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f); 
     border-radius: 10px;     
-    position:relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -368,7 +317,7 @@ form .bt2{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
@@ -387,6 +336,7 @@ nav .fa-solid{
 @media only screen and (max-width: 500px){
     #header{
         background-image: url(images/phone-background.PNG);
+        width: 400px;
     }
     .header-text{
         margin-top: 415px;
@@ -403,8 +353,8 @@ nav .fa-solid{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -150px;
-        width: 150px;
+        right: 0;
+        width: 110px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -412,7 +362,7 @@ nav .fa-solid{
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 23px;
     }
     nav ul .fa-solid{
         position: absolute;
